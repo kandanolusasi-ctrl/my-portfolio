@@ -1,6 +1,76 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    
+<style>
+/* Profile Hero Section */
+.profile-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 65px 8%;
+  min-height: 550px;
+  background: #0b1120;
+  color: white;
+}
+
+.profile-info h1 {
+  font-size: clamp(32px, 5vw, 55px);
+  margin-bottom: 15px;
+}
+
+.profile-info h1 span {
+  color: #38bdf8;
+}
+
+.profile-info p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 20px;
+}
+
+.portfolio-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  margin: 12px 8px 0 0;
+  background: #38bdf8;
+  color: #07111f;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.resume-section {
+  padding: 65px 8%;
+  background: #111827;
+  color: white;
+  text-align: center;
+}
+
+.resume-section p {
+  color: #cbd5e1;
+}
+
+@media(max-width: 768px) {
+  .profile-hero {
+    grid-template-columns: 1fr;
+    padding: 35px 6%;
+  }
+
+  .profile-photo {
+    height: 380px;
+  }
+}
+</style>
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -142,6 +212,64 @@ a {
         <a href="#contact">Contact</a>
     </nav>
 </header>
+    
+<section class="profile-hero" id="home">
+
+  <div class="profile-info">
+    <p>WELCOME TO MY PORTFOLIO</p>
+
+    <h1>Hello, I'm <span>Kandanolu Sashikiran</span></h1>
+
+    <h3>M.Tech CSE Student | AI & Machine Learning</h3>
+
+    <p>
+      Passionate about Artificial Intelligence,
+      Machine Learning, Natural Language Processing,
+      Retrieval-Augmented Generation and Cloud Computing.
+    </p>
+
+    <a href="#resume" class="portfolio-btn">
+      View My Resume
+    </a>
+
+    <a href="mailto:kandanolusashikiran@gmail.com"
+       class="portfolio-btn">
+      Contact Me
+    </a>
+  </div>
+
+  <div>
+    <img src="profile.jpg"
+         alt="Kandanolu Sashikiran"
+         class="profile-photo">
+  </div>
+
+</section>
+
+<section class="resume-section" id="resume">
+
+  <h2>My Resume</h2>
+
+  <p>
+    Download my latest resume to know more about
+    my education, technical skills, projects
+    and certifications.
+  </p>
+
+  <a href="resume.pdf"
+     target="_blank"
+     class="portfolio-btn">
+    View Resume PDF
+  </a>
+
+  <a href="resume.pdf"
+     download
+     class="portfolio-btn">
+    Download Resume
+  </a>
+
+</section>
+
 
 <section class="hero" id="home">
     <h1>Kandanolu Sashikiran</h1>
