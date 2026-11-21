@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="M.Tech CSE portfolio — AI, Machine Learning, NLP and Retrieval-Augmented Generation." />
+  <title>Your Name | CSE Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">Y</span><span>YourName<span class="accent">.</span></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact" class="nav-cta">Contact <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING & OPPORTUNITIES</div>
+        <p class="hero-kicker">Hello, I'm</p>
+        <h1>Your Name<span class="accent">.</span></h1>
+        <h2>M.Tech CSE Student <span class="muted">|</span> Aspiring AI/ML Engineer</h2>
+        <p class="hero-summary">I build practical solutions using Python, Machine Learning, NLP and Retrieval-Augmented Generation. I am interested in developing reliable AI systems that make information easier to find, verify and use.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↘</span></a><a class="button button-ghost" href="#contact">Get in touch</a></div>
+        <div class="hero-meta"><span><b>01</b> Research-minded</span><span><b>02</b> Project-focused</span><span><b>03</b> Always learning</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract technology illustration">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="core-card"><div class="core-icon">⌘</div><div class="core-label">BUILDING WITH</div><div class="core-title">AI <span>+</span> DATA</div><div class="core-line"></div><div class="core-tags"><span>Python</span><span>NLP</span><span>RAG</span></div></div>
+        <div class="float-chip chip-top"><span class="chip-icon">✳</span> Machine Learning</div>
+        <div class="float-chip chip-bottom"><span class="chip-icon">◈</span> Trustworthy AI</div>
+        <div class="visual-number">CSE / 2026</div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2>Curious mind.<br><span class="gradient-text">Practical builder.</span></h2></div>
+      <div class="about-content"><p class="lead">I am a postgraduate Computer Science and Engineering student with an interest in Artificial Intelligence, Machine Learning and Natural Language Processing.</p><p>My work focuses on applying concepts to real problems through hands-on projects. My current major project, <strong>VeriRAG</strong>, explores how a Retrieval-Augmented Generation system can go beyond retrieving information by checking claims, validating citations and repairing unsupported answers using document evidence.</p><div class="about-facts"><div><span class="fact-label">CURRENT FOCUS</span><strong>AI / ML / NLP</strong></div><div><span class="fact-label">DEGREE</span><strong>M.Tech – CSE</strong></div><div><span class="fact-label">LOCATION</span><strong>Kurnool, Andhra Pradesh</strong></div></div></div>
+    </section>
+
+    <section class="section-wrap section-block" id="skills">
+      <div class="section-heading"><p class="eyebrow">02 / TECHNICAL TOOLKIT</p><h2>Skills I’m<br><span class="gradient-text">working with.</span></h2></div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon">⌘</div><h3>Programming</h3><p>Python</p><span class="skill-note">Core programming & scripting</span></article>
+        <article class="skill-card"><div class="skill-icon">◉</div><h3>AI / ML</h3><p>Machine Learning · NLI</p><span class="skill-note">Model-based analysis and verification</span></article>
+        <article class="skill-card"><div class="skill-icon">▤</div><h3>NLP & Generative AI</h3><p>RAG · Claim Extraction</p><span class="skill-note">Evidence-grounded question answering</span></article>
+        <article class="skill-card"><div class="skill-icon">◫</div><h3>Tools & Platforms</h3><p>FAISS · Sentence Transformers · Google Colab</p><span class="skill-note">Document retrieval and experimentation</span></article>
+      </div>
+      <p class="small-note">This skills list is based on the tools and topics used in the VeriRAG project. Add or remove skills to match your actual experience.</p>
+    </section>
+
+    <section class="section-wrap section-block" id="projects">
+      <div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects with<br><span class="gradient-text">a purpose.</span></h2></div>
+      <article class="project-card featured-project">
+        <div class="project-topline"><span class="project-type">M.TECH MAJOR PROJECT</span><span class="project-year">2026</span></div>
+        <h3>VeriRAG</h3>
+        <h4>Beyond Retrieval: Claim-Level Hallucination Detection, Citation Verification and Repair for Trustworthy Domain-Specific Retrieval-Augmented Question Answering</h4>
+        <p class="project-description">A document-grounded RAG workflow designed to improve answer trustworthiness. It retrieves evidence from PDF documents, generates answers, extracts answer claims, checks claim support using Natural Language Inference (NLI), retrieves citation evidence and supports evidence-based answer repair.</p>
+        <div class="project-flow"><span>PDF Corpus</span><i>→</i><span>Chunking</span><i>→</i><span>FAISS Retrieval</span><i>→</i><span>RAG Answer</span><i>→</i><span>Claim Verification</span><i>→</i><span>Citation & Repair</span></div>
+        <div class="project-tags"><span>Python</span><span>FAISS</span><span>Sentence Transformers</span><span>NLI</span><span>RAG</span><span>Google Colab</span></div>
+        <div class="project-bottom"><span class="project-status"><span class="status-dot"></span> Implemented academic prototype</span><a href="mailto:your.email@example.com?subject=VeriRAG%20Project%20Enquiry">Ask about this project ↗</a></div>
+      </article>
+      <div class="project-placeholder"><div class="placeholder-plus">＋</div><div><h3>More projects coming soon</h3><p>Add your mini-projects, coursework, GitHub repositories and research work here.</p></div><span class="coming-soon">IN PROGRESS</span></div>
+    </section>
+
+    <section class="section-wrap section-block" id="education">
+      <div class="section-heading"><p class="eyebrow">04 / EDUCATION</p><h2>Learning is a<br><span class="gradient-text">continuous process.</span></h2></div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">POSTGRADUATE</div><div class="timeline-content"><h3>Master of Technology – Computer Science & Engineering</h3><p>G. Pulla Reddy Engineering College, Kurnool, Andhra Pradesh</p><span>Update graduation year and CGPA if you want them displayed.</span></div></div>
+        <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">UNDERGRADUATE</div><div class="timeline-content"><h3>Bachelor’s Degree</h3><p>Add your exact degree, college and graduation year.</p><span>Details to be completed</span></div></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block contact-section" id="contact">
+      <div class="contact-panel"><div><p class="eyebrow">05 / CONTACT</p><h2>Have an opportunity<br>or an idea? <span class="gradient-text">Let’s talk.</span></h2><p class="contact-copy">I’m interested in connecting with people working in AI, Machine Learning, NLP and software development.</p></div><div class="contact-links"><a href="mailto:your.email@example.com"><span>Email</span><b>your.email@example.com ↗</b></a><a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noreferrer"><span>LinkedIn</span><b>Add your profile ↗</b></a><a href="https://github.com/your-github" target="_blank" rel="noreferrer"><span>GitHub</span><b>Add your repositories ↗</b></a></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">Y</span><span>YourName<span class="accent">.</span></span></a><span>Designed & built with curiosity.</span><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
